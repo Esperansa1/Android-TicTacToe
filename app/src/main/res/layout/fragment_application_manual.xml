@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationManual"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="How to use the application"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1. Choose wanted gamemode\n\n2. Fill out your nickname\n\n3. If you chose to play multiplayer, either create or join a lobby\n\n4. If you chose to play against the computer, choose computer level\n\n5. Start the game and enjoy!"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_margin="30dp"
+        android:textSize="18dp"
+        android:paddingTop="80dp"/>
+
+
+
+
+
+
+</FrameLayout>

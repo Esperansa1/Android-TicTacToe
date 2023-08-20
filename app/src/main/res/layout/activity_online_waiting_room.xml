@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnlineWaitingRoom"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Code:"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+
+        />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Code"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Names"
+            android:textSize="35sp"
+            android:layout_marginBottom="30sp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Connected Yet"
+            android:textSize="35sp"
+            android:layout_marginBottom="20sp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Connected Yet"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+
+            />
+
+        <Button
+            android:layout_marginTop="20sp"
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startGame"
+            android:visibility="invisible"
+            android:text="START GAME"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30sp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share to friends"
+            android:textSize="30sp"
+            android:layout_marginBottom="15sp"
+            android:textColor="@color/black"
+
+            />
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Friend's phone number"
+            android:textSize="20sp"
+            android:layout_marginBottom="20sp"
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send to friend"
+                android:onClick="sendSms"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

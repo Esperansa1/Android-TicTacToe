@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PVBMenu"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/one_crayon"
+        android:text="Player VS Computer"
+        android:textSize="55sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/black"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/p1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200sp"
+        android:hint="Player Name"
+        android:layout_marginTop="30sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Difficulty"
+            android:gravity="center"
+            android:fontFamily="@font/one_crayon"
+            android:textSize="35sp"
+            android:layout_margin="5sp"
+            android:textColor="@color/black"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/difficultyGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:layout_margin="5sp"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:layout_margin="5sp"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hard"
+                android:layout_margin="5sp"
+
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unbeatable"
+                android:layout_margin="5sp"
+
+                />
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:onClick="startGame"
+        android:text="Start"
+        />
+
+</LinearLayout>

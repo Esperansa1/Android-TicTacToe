@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameRulesFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Rules for Tic-Tac-Toe"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Players take turns putting their marks in empty squares.\n\n The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.\n\n When all 9 squares are full, the game is over.\n\n If no player has 3 marks in a row, the game ends in a tie."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+
+        />
+
+
+
+
+</FrameLayout>
